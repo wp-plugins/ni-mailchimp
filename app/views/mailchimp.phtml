@@ -1,0 +1,28 @@
+<!-- Added by NI Mailchimp Plugin created by Peter Featherstone -->
+
+<form id="ni_mc_form" action="#ni_mc_form" method="post">
+    
+    <input type="text" 
+           name="ni_mc_email" 
+           id="ni_mc_email" 
+           value="<?php echo $data['email']; ?>"
+           placeholder="<?php echo $data['options']['EPlcHol']; ?>"
+           />
+
+    <input type="submit"
+           class="ni_mc_submit"
+           name="ni_mc_submit"
+           value="<?php echo $data['options']['SbtBtnTxt']; ?>"
+           />
+           
+    <?php if( $data['error'] ) : ?>
+    
+        <div class="ni_mc_error">
+            <?php echo $data['error']; ?>
+        </div>
+    
+    <?php endif; ?>
+    
+</form>
+
+<!-- End added by NI Mailchimp Plugin created by Peter Featherstone -->
